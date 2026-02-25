@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		P1 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Crossed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		P2 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CrossedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/CrossedApp.swift; sourceTree = "<group>"; };
+		B1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrossedApp.swift; sourceTree = "<group>"; };
 		B2 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		B3 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSortingService.swift; sourceTree = "<group>"; };
 		B4 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingService.swift; sourceTree = "<group>"; };
@@ -52,11 +52,11 @@
 /* Begin PBXGroup section */
 		G0 = {
 			isa = PBXGroup;
-			children = (G1, G8);
+			children = (G1, G9, G8);
 			sourceTree = "<group>";
 		};
-		G1 = {isa = PBXGroup; path = CrossedApp; sourceTree = "<group>"; children = (G2,G6,G7); };
-		G2 = {isa = PBXGroup; path = Sources; sourceTree = "<group>"; children = (G3,G4,G9,G5,B1); };
+		G1 = {isa = PBXGroup; path = CrossedApp; sourceTree = "<group>"; children = (G2,G6,BE,G7); };
+		G2 = {isa = PBXGroup; path = Sources; sourceTree = "<group>"; children = (G3,G4,G5,B1); };
 		G3 = {isa = PBXGroup; path = Models; sourceTree = "<group>"; children = (B2); };
 		G4 = {isa = PBXGroup; path = Services; sourceTree = "<group>"; children = (B3,B4,B5,B6); };
 		G5 = {isa = PBXGroup; path = Views; sourceTree = "<group>"; children = (B8,B9,BA,BB,BC,BD); };
@@ -126,10 +126,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin XCBuildConfiguration section */
-		DBUG = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MARKETING_VERSION = 1.0; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; ALWAYS_SEARCH_USER_PATHS = NO; }; name = Debug; };
-		RLS = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MARKETING_VERSION = 1.0; CURRENT_PROJECT_VERSION = 1; ALWAYS_SEARCH_USER_PATHS = NO; }; name = Release; };
-		TDBG = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; BUNDLE_LOADER = "$(TEST_HOST)"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crossed.app/Crossed"; ALWAYS_SEARCH_USER_PATHS = NO; }; name = Debug; };
-		TRLS = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; BUNDLE_LOADER = "$(TEST_HOST)"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crossed.app/Crossed"; ALWAYS_SEARCH_USER_PATHS = NO; }; name = Release; };
+		DBUG = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MARKETING_VERSION = 1.0; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; }; name = Debug; };
+		RLS = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MARKETING_VERSION = 1.0; CURRENT_PROJECT_VERSION = 1; }; name = Release; };
+		TDBG = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; BUNDLE_LOADER = "$(TEST_HOST)"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crossed.app/Crossed"; }; name = Debug; };
+		TRLS = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; BUNDLE_LOADER = "$(TEST_HOST)"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crossed.app/Crossed"; }; name = Release; };
 		PDBG = {isa = XCBuildConfiguration; buildSettings = { }; name = Debug; };
 		PRLS = {isa = XCBuildConfiguration; buildSettings = { }; name = Release; };
 /* End XCBuildConfiguration section */
