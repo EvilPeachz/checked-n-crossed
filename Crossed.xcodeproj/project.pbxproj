@@ -1,0 +1,144 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1 /* CrossedApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1; };
+		A2 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2; };
+		A3 /* TaskSortingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3; };
+		A4 /* SchedulingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4; };
+		A5 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5; };
+		A6 /* PurchaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6; };
+		A7 /* TaskListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7; };
+		A8 /* LegalPadBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8; };
+		A9 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9; };
+		AA /* TaskEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA; };
+		AB /* MainListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB; };
+		AC /* UpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC; };
+		AD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD; };
+		AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE; };
+		AF /* SortingLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		P1 = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Crossed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		P2 = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = CrossedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App/CrossedApp.swift; sourceTree = "<group>"; };
+		B2 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B3 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskSortingService.swift; sourceTree = "<group>"; };
+		B4 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingService.swift; sourceTree = "<group>"; };
+		B5 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		B6 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseService.swift; sourceTree = "<group>"; };
+		B7 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewModel.swift; sourceTree = "<group>"; };
+		B8 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalPadBackground.swift; sourceTree = "<group>"; };
+		B9 = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		BA = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditView.swift; sourceTree = "<group>"; };
+		BB = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainListView.swift; sourceTree = "<group>"; };
+		BC = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpgradeView.swift; sourceTree = "<group>"; };
+		BD = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		BE = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingLogicTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+		F2 = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		G0 = {
+			isa = PBXGroup;
+			children = (G1, G8);
+			sourceTree = "<group>";
+		};
+		G1 = {isa = PBXGroup; path = CrossedApp; sourceTree = "<group>"; children = (G2,G6,G7); };
+		G2 = {isa = PBXGroup; path = Sources; sourceTree = "<group>"; children = (G3,G4,G9,G5,B1); };
+		G3 = {isa = PBXGroup; path = Models; sourceTree = "<group>"; children = (B2); };
+		G4 = {isa = PBXGroup; path = Services; sourceTree = "<group>"; children = (B3,B4,B5,B6); };
+		G5 = {isa = PBXGroup; path = Views; sourceTree = "<group>"; children = (B8,B9,BA,BB,BC,BD); };
+		G6 = {isa = PBXGroup; path = Resources; sourceTree = "<group>"; children = (BE); };
+		G7 = {isa = PBXGroup; path = Tests; sourceTree = "<group>"; children = (BF); };
+		G8 = {isa = PBXGroup; name = Products; sourceTree = "<group>"; children = (P1,P2); };
+		G9 = {isa = PBXGroup; path = ViewModels; sourceTree = "<group>"; children = (B7); };
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		T1 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1;
+			buildPhases = (S1,F1,R1);
+			buildRules = ();
+			dependencies = ();
+			name = Crossed;
+			productName = Crossed;
+			productReference = P1;
+			productType = "com.apple.product-type.application";
+		};
+		T2 = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2;
+			buildPhases = (S2,F2);
+			buildRules = ();
+			dependencies = (D1);
+			name = CrossedTests;
+			productName = CrossedTests;
+			productReference = P2;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		PR = {
+			isa = PBXProject;
+			attributes = { LastUpgradeCheck = 1600; TargetAttributes = { T2 = { TestTargetID = T1; }; };};
+			buildConfigurationList = C0;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base);
+			mainGroup = G0;
+			productRefGroup = G8;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (T1,T2);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R1 = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (AE); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		S1 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A1,A2,A3,A4,A5,A6,A7,A8,A9,AA,AB,AC,AD); runOnlyForDeploymentPostprocessing = 0; };
+		S2 = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (AF); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1 = {isa = PBXTargetDependency; target = T1; targetProxy = PX1; };
+/* End PBXTargetDependency section */
+
+/* Begin PBXContainerItemProxy section */
+		PX1 = {isa = PBXContainerItemProxy; containerPortal = PR; proxyType = 1; remoteGlobalIDString = T1; remoteInfo = Crossed; };
+/* End PBXContainerItemProxy section */
+
+/* Begin XCBuildConfiguration section */
+		DBUG = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MARKETING_VERSION = 1.0; CURRENT_PROJECT_VERSION = 1; ENABLE_PREVIEWS = YES; ALWAYS_SEARCH_USER_PATHS = NO; }; name = Debug; };
+		RLS = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; MARKETING_VERSION = 1.0; CURRENT_PROJECT_VERSION = 1; ALWAYS_SEARCH_USER_PATHS = NO; }; name = Release; };
+		TDBG = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; BUNDLE_LOADER = "$(TEST_HOST)"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crossed.app/Crossed"; ALWAYS_SEARCH_USER_PATHS = NO; }; name = Debug; };
+		TRLS = {isa = XCBuildConfiguration; buildSettings = { PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; IPHONEOS_DEPLOYMENT_TARGET = 16.0; CODE_SIGN_STYLE = Automatic; GENERATE_INFOPLIST_FILE = YES; BUNDLE_LOADER = "$(TEST_HOST)"; TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crossed.app/Crossed"; ALWAYS_SEARCH_USER_PATHS = NO; }; name = Release; };
+		PDBG = {isa = XCBuildConfiguration; buildSettings = { }; name = Debug; };
+		PRLS = {isa = XCBuildConfiguration; buildSettings = { }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0 = {isa = XCConfigurationList; buildConfigurations = (PDBG,PRLS); defaultConfigurationName = Debug; defaultConfigurationIsVisible = 0; };
+		C1 = {isa = XCConfigurationList; buildConfigurations = (DBUG,RLS); defaultConfigurationName = Debug; defaultConfigurationIsVisible = 0; };
+		C2 = {isa = XCConfigurationList; buildConfigurations = (TDBG,TRLS); defaultConfigurationName = Debug; defaultConfigurationIsVisible = 0; };
+/* End XCConfigurationList section */
+	};
+	rootObject = PR;
+}
